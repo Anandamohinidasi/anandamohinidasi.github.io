@@ -26,6 +26,11 @@ body {
     position: relative;
 }
 
+.about-me p {
+    max-width: 800px;
+    margin: auto;
+}
+
 .aboute-me-wave {
     position: relative;
 }
