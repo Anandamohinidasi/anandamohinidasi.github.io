@@ -19,6 +19,7 @@ body {
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    border-bottom-left-radius: 300px;
 }
 
 .about-me {
@@ -28,16 +29,32 @@ body {
 }
 
 .my-face {
-    padding: 20px;
-    border-radius: 100%;
-    border-right-color: #2b2bea;
-    border-top-color: #e2e244;
-    border-bottom-color: #FF5722;
-    border-left-color: #47ff47;
-    border-width: 8px;
-    border-style: solid;
-    -webkit-transform-style: preserve-3d;
+   /* background-image: linear-gradient(to right,#d33300,#ff8d22);
+    position: relative;
+    border-bottom-left-radius: 270px;
+    border-bottom-right-radius: 270px;
+    border-top-right-radius: 270px;
+    border-top-left-radius: 270px;
+    top: -136px;
+    left: -18px;*/
 }
+
+/* my favorite background-image: linear-gradient(to right,#d33300,#ff8d22);*/
+
+/*background-image: linear-gradient(to right,#FFEB3B,#E91E63);*/
+
+/* laranja     background-image: linear-gradient(to right,#FF5722,#da1b80);*/
+
+
+/* .my-face {
+    background-image: linear-gradient(to right,#5cff00, orange, #da1bbe);
+    position: relative;
+    border-bottom-left-radius: 270px;
+    border-bottom-right-radius: 270px;
+    border-top-right-radius: 270px;
+    top: -136px;
+    left: -18px;
+}*/
 
 .my-face img {
     border-radius: 50%;
@@ -48,10 +65,6 @@ body {
 .my-face:hover:before {
     animation: orbit 3s infinite linear;
 }
-
-/*.my-face:hover img{*/
-    /*animation: orbitAgainst 3s infinite linear;*/
-/*}*/
 
 .footer {
     position: absolute;
@@ -68,40 +81,18 @@ body {
     padding: 0 1rem;
 }
 
-
-@keyframes orbit {
-    from {
-        -webkit-transform: rotate(0deg) rotateX(0deg);
-        -moz-transform: rotate(0deg) rotateX(0deg);
-        -o-transform: rotate(0deg) rotateX(0deg);
-        -ms-transform: rotate(0deg) rotateX(0deg);
-        transform: rotate(0deg) rotateX(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg) rotateX(360deg);
-        -moz-transform: rotate(360deg) rotateX(360deg);
-        -o-transform: rotate(360deg) rotateX(360deg);
-        -ms-transform: rotate(360deg) rotateX(360deg);
-        transform: rotate(360deg) rotateX(360deg);
-    }
+.habilities-container {
+    background: #16161A;
 }
 
-@keyframes orbitAgainst {
-    from {
-        -webkit-transform: rotate(0deg) translateZ(0px);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+.habilities {
+    background: white;
+    height: 100vh;
+    border-top-right-radius: 300px;
 }
+
+
+
 
 @media (min-width: 600px) {
     .billboard {
