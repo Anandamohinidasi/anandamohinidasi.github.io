@@ -268,3 +268,22 @@ span.hability-name {
         bottom: 50px;
     }
 }
+
+@media (max-width: 599px) {
+    .billboard {
+        border-bottom-left-radius: 140px;
+    }
+    .habilities {
+        border-top-right-radius: 140px;
+        margin-top: -1px;
+        padding-top: 6rem;
+        padding-left: 8vw;
+    }
+    span.hability-name {
+        width: 253px;
+        word-break: break-all;
+    }
+    .hability {
+        width: 85vw;
+    }
+}
