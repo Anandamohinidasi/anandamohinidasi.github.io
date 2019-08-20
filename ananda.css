@@ -20,6 +20,8 @@ body {
     flex-direction: column;
     overflow: hidden;
     border-bottom-left-radius: 300px;
+    z-index: 1;
+    position: relative;
 }
 
 .about-me {
@@ -81,8 +83,31 @@ body {
     padding: 0 1rem;
 }
 
+.gradient-border {
+    background-image: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
+    background-image: linear-gradient(to right,#ff8a00,#da1b60);
+    position: relative;
+    padding: calc(298px + 1rem) 2rem 0;
+    margin-top: -288px;
+    overflow: hidden;
+    border-bottom-left-radius: 300px;
+}
+
+.gradient-border-right {
+    right: -53vw;
+    background-image: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
+    text-align: right;
+    background-image: linear-gradient(to right,#ff8a00,#da1b60);
+    position: relative;
+    padding: calc(298px + 1rem) 0px 0;
+    overflow: hidden;
+    border-top-right-radius: 300px;
+    width: 50vw;
+}
+
 .habilities-container {
-    background: #16161A;
+    /*background: #16161A;*/
+    margin-top: -25px;
 }
 
 .habilities {
@@ -92,6 +117,8 @@ body {
     position: relative;
     padding-top: 9rem;
     padding-left: 9rem;
+    z-index: 1;
+    margin-top: -289px;
 }
 
 .hability {
@@ -122,134 +149,134 @@ span.hability-name {
 
  .progress2.js {width: 100%;}
  .progress-moved.js .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 100%;
     animation: progressAnimationjs 4s;
   }
 
  @keyframes progressAnimationjs {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 100%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 100%; background-color: #da1b60; }
   }
 
   .progress2.angular {width: 95%;}
   .progress-moved.angular .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 95%;
     animation: progressAnimationangular 5s;
   }
 
  @keyframes progressAnimationangular {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 95%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 95%; background-color: #da1b60; }
   }
 
   .progress2.react {width: 75%;}
   .progress-moved.react .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 75%;
     animation: progressAnimationreact 5s;
   }
 
  @keyframes progressAnimationreact {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 75%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 75%; background-color: #da1b60; }
   }
 
   .progress2.html {width: 100%;}
   .progress-moved.html .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 100%;
     animation: progressAnimationhtml 4s;
   }
 
  @keyframes progressAnimationhtml {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 100%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 100%; background-color: #da1b60; }
   }
 
   .progress2.sass {width: 100%;}
   .progress-moved.sass .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 100%;
     animation: progressAnimationsass 3s;
   }
 
  @keyframes progressAnimationsass {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 100%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 100%; background-color: #da1b60; }
   }
 
   .progress2.node {width: 95%;}
   .progress-moved.node .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 95%;
     animation: progressAnimationnode 4s;
   }
 
  @keyframes progressAnimationnode {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 95%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 95%; background-color: #da1b60; }
   }
 
   .progress2.karma {width: 70%;}
   .progress-moved.karma  .progress-bar2{
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 70%;
     animation: progressAnimationkarma 6s;
   }
 
  @keyframes progressAnimationkarma {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 70%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 70%; background-color: #da1b60; }
   }
 
   .progress2.python {width: 85%;}
   .progress-moved.python .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 85%;
     animation: progressAnimationpython 5s;
   }
 
  @keyframes progressAnimationpython {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 85%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 85%; background-color: #da1b60; }
   }
 
   .progress2.mongo {width: 70%;}
   .progress-moved.mongo .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 70%;  
     animation: progressAnimationmongo 6s;
   }
 
  @keyframes progressAnimationmongo {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 70%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 70%; background-color: #da1b60; }
   }
 
   .progress2.sql {width: 70%;}
   .progress-moved.sql .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     width: 70%;
     animation: progressAnimationsql 7s;
   }
 
  @keyframes progressAnimationsql {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 70%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 70%; background-color: #da1b60; }
   }
 
   .progress2.aws {width: 85%;}
   .progress-moved.aws .progress-bar2 {
-    background-color: #EF476F;  
+    background-color: #da1b60;  
     
     animation: progressAnimationaws 6s;
   }
 
  @keyframes progressAnimationaws {
-    0%   { width: 5%; background-color: #F9BCCA;}
-    100% { width: 85%; background-color: #EF476F; }
+    0%   { width: 5%; background-color: #ff8a00;}
+    100% { width: 85%; background-color: #da1b60; }
   }
 
 @media (min-width: 600px) {
@@ -285,5 +312,8 @@ span.hability-name {
     }
     .hability {
         width: 85vw;
+    }
+    .about-me {
+        margin-top: -3rem;
     }
 }
