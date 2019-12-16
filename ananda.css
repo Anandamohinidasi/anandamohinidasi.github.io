@@ -19,9 +19,6 @@ body {
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    border-bottom-left-radius: 300px;
-    z-index: 1;
-    position: relative;
 }
 
 .about-me {
@@ -31,32 +28,16 @@ body {
 }
 
 .my-face {
-   /* background-image: linear-gradient(to right,#d33300,#ff8d22);
-    position: relative;
-    border-bottom-left-radius: 270px;
-    border-bottom-right-radius: 270px;
-    border-top-right-radius: 270px;
-    border-top-left-radius: 270px;
-    top: -136px;
-    left: -18px;*/
+    padding: 20px;
+    border-radius: 100%;
+    border-right-color: #2b2bea;
+    border-top-color: #e2e244;
+    border-bottom-color: #FF5722;
+    border-left-color: #47ff47;
+    border-width: 8px;
+    border-style: solid;
+    -webkit-transform-style: preserve-3d;
 }
-
-/* my favorite background-image: linear-gradient(to right,#d33300,#ff8d22);*/
-
-/*background-image: linear-gradient(to right,#FFEB3B,#E91E63);*/
-
-/* laranja     background-image: linear-gradient(to right,#FF5722,#da1b80);*/
-
-
-/* .my-face {
-    background-image: linear-gradient(to right,#5cff00, orange, #da1bbe);
-    position: relative;
-    border-bottom-left-radius: 270px;
-    border-bottom-right-radius: 270px;
-    border-top-right-radius: 270px;
-    top: -136px;
-    left: -18px;
-}*/
 
 .my-face img {
     border-radius: 50%;
@@ -67,6 +48,10 @@ body {
 .my-face:hover:before {
     animation: orbit 3s infinite linear;
 }
+
+/*.my-face:hover img{*/
+    /*animation: orbitAgainst 3s infinite linear;*/
+/*}*/
 
 .footer {
     position: absolute;
@@ -83,201 +68,40 @@ body {
     padding: 0 1rem;
 }
 
-.gradient-border {
-    background-image: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
-    background-image: linear-gradient(to right,#ff8a00,#da1b60);
-    position: relative;
-    padding: calc(298px + 1rem) 2rem 0;
-    margin-top: -288px;
-    overflow: hidden;
-    border-bottom-left-radius: 300px;
+
+@keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg) rotateX(0deg);
+        -moz-transform: rotate(0deg) rotateX(0deg);
+        -o-transform: rotate(0deg) rotateX(0deg);
+        -ms-transform: rotate(0deg) rotateX(0deg);
+        transform: rotate(0deg) rotateX(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg) rotateX(360deg);
+        -moz-transform: rotate(360deg) rotateX(360deg);
+        -o-transform: rotate(360deg) rotateX(360deg);
+        -ms-transform: rotate(360deg) rotateX(360deg);
+        transform: rotate(360deg) rotateX(360deg);
+    }
 }
 
-.gradient-border-right {
-    right: -53vw;
-    background-image: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
-    text-align: right;
-    background-image: linear-gradient(to right,#ff8a00,#da1b60);
-    position: relative;
-    padding: calc(298px + 1rem) 0px 0;
-    overflow: hidden;
-    border-top-right-radius: 300px;
-    width: 45.75vw;
+@keyframes orbitAgainst {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0px);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
 }
-
-.habilities-container {
-    /*background: #16161A;*/
-    margin-top: -25px;
-}
-
-.habilities {
-    background: white;
-    height: 100vh;
-    border-top-right-radius: 300px;
-    position: relative;
-    padding-top: 9rem;
-    padding-left: 9rem;
-    z-index: 1;
-    margin-top: -289px;
-}
-
-.hability {
-    display: inline-flex;
-    align-items: center;
-    padding-bottom: .7rem;
-    width: 70vw;
-}
-
-span.hability-name {
-    width: 230px;
-    font-weight: bold;
-}
-
- .progress2 {
-    padding: 6px;
-    margin: auto;
-  }
-
- .progress-bar2 {
-    height: 25px;
-    border-radius: 30px;
-    background-image: 
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    transition: 0.5s linear;  
-    transition-property: width, background-color;    
-  }
-
- .progress2.js {width: 100%;}
- .progress-moved.js .progress-bar2 {
-    background-color: #da1b60;  
-    width: 100%;
-    animation: progressAnimationjs 4s;
-  }
-
- @keyframes progressAnimationjs {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 100%; background-color: #da1b60; }
-  }
-
-  .progress2.angular {width: 95%;}
-  .progress-moved.angular .progress-bar2 {
-    background-color: #da1b60;  
-    width: 95%;
-    animation: progressAnimationangular 5s;
-  }
-
- @keyframes progressAnimationangular {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 95%; background-color: #da1b60; }
-  }
-
-  .progress2.react {width: 75%;}
-  .progress-moved.react .progress-bar2 {
-    background-color: #da1b60;  
-    width: 75%;
-    animation: progressAnimationreact 5s;
-  }
-
- @keyframes progressAnimationreact {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 75%; background-color: #da1b60; }
-  }
-
-  .progress2.html {width: 100%;}
-  .progress-moved.html .progress-bar2 {
-    background-color: #da1b60;  
-    width: 100%;
-    animation: progressAnimationhtml 4s;
-  }
-
- @keyframes progressAnimationhtml {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 100%; background-color: #da1b60; }
-  }
-
-  .progress2.sass {width: 100%;}
-  .progress-moved.sass .progress-bar2 {
-    background-color: #da1b60;  
-    width: 100%;
-    animation: progressAnimationsass 3s;
-  }
-
- @keyframes progressAnimationsass {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 100%; background-color: #da1b60; }
-  }
-
-  .progress2.node {width: 95%;}
-  .progress-moved.node .progress-bar2 {
-    background-color: #da1b60;  
-    width: 95%;
-    animation: progressAnimationnode 4s;
-  }
-
- @keyframes progressAnimationnode {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 95%; background-color: #da1b60; }
-  }
-
-  .progress2.karma {width: 70%;}
-  .progress-moved.karma  .progress-bar2{
-    background-color: #da1b60;  
-    width: 70%;
-    animation: progressAnimationkarma 6s;
-  }
-
- @keyframes progressAnimationkarma {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 70%; background-color: #da1b60; }
-  }
-
-  .progress2.python {width: 85%;}
-  .progress-moved.python .progress-bar2 {
-    background-color: #da1b60;  
-    width: 85%;
-    animation: progressAnimationpython 5s;
-  }
-
- @keyframes progressAnimationpython {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 85%; background-color: #da1b60; }
-  }
-
-  .progress2.mongo {width: 70%;}
-  .progress-moved.mongo .progress-bar2 {
-    background-color: #da1b60;  
-    width: 70%;  
-    animation: progressAnimationmongo 6s;
-  }
-
- @keyframes progressAnimationmongo {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 70%; background-color: #da1b60; }
-  }
-
-  .progress2.sql {width: 70%;}
-  .progress-moved.sql .progress-bar2 {
-    background-color: #da1b60;  
-    width: 70%;
-    animation: progressAnimationsql 7s;
-  }
-
- @keyframes progressAnimationsql {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 70%; background-color: #da1b60; }
-  }
-
-  .progress2.aws {width: 85%;}
-  .progress-moved.aws .progress-bar2 {
-    background-color: #da1b60;  
-    
-    animation: progressAnimationaws 6s;
-  }
-
- @keyframes progressAnimationaws {
-    0%   { width: 5%; background-color: #ff8a00;}
-    100% { width: 85%; background-color: #da1b60; }
-  }
 
 @media (min-width: 600px) {
     .billboard {
@@ -287,33 +111,32 @@ span.hability-name {
         text-align: left;
         max-width: 500px;
     }
-    .my-face {
-        padding: 50px;
-    }
     .footer {
         right: 180px;
         bottom: 50px;
     }
 }
 
-@media (max-width: 599px) {
-    .billboard {
-        border-bottom-left-radius: 140px;
-    }
-    .habilities {
-        border-top-right-radius: 140px;
-        margin-top: -1px;
-        padding-top: 6rem;
-        padding-left: 8vw;
-    }
-    span.hability-name {
-        width: 253px;
-        word-break: break-all;
-    }
-    .hability {
-        width: 85vw;
-    }
-    .about-me {
-        margin-top: -3rem;
-    }
+.star-container {
+    height: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 18px;
+    justify-content: center;
+}
+
+.star-line {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 18px;
+    justify-content: space-around;
+}
+
+.language-options-container {
+    position: absolute;
+    right: 0;
+    background: white;
+    color: #16161A;
+    cursor: pointer;
 }
