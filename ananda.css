@@ -111,11 +111,32 @@ body {
         text-align: left;
         max-width: 500px;
     }
-    .my-face {
-        padding: 50px;
-    }
     .footer {
         right: 180px;
         bottom: 50px;
     }
+}
+
+.star-container {
+    height: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 18px;
+    justify-content: center;
+}
+
+.star-line {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 18px;
+    justify-content: space-around;
+}
+
+.language-options-container {
+    position: absolute;
+    right: 0;
+    background: white;
+    color: #16161A;
+    cursor: pointer;
 }

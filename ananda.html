@@ -7,6 +7,8 @@
     <title>Ananda Rodrigues</title>
     <link rel="stylesheet" href="ananda.css">
     <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="flags.css">
+    <link rel="stylesheet" href="start.css">
     <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
 </head>
 <body>
@@ -16,10 +18,10 @@
             <img src="./me.png" alt="Foto do rosto da Ananda Rodrigues">
         </div>
         <div class="about-me">
-            <h2 class="title center">
+            <h2 id="landTitle" class="title center">
                 I'm Ananda Rodrigues,
             </h2>
-            <p>
+            <p id="landDescription">
                 Self learned and self moved, web and mobile developer. In love with learning new technologies
                 and freedom to create.
                 I believe we can make a faster, smarter and prettier web.
@@ -31,6 +33,48 @@
                 <!--and freedom to create.-->
                 <!--I believe we can make a faster, smarter and prettier web.-->
             <!--</p>-->
+        </div>
+        <div id="loc" class="language-options-container" style="display: none">
+            <div class="pt" onclick="changeLanguage('pt')">
+                <div class="flag-body brasil">
+                    <div class="losangue"></div>
+                    <div class="circle"></div>
+                  </div>
+            </div>
+            <div class="en" onclick="changeLanguage('en')">
+            <div class="flag-body usa">
+                <div class="star-container">
+                        <div class="star-line">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                        </div>
+                        <div class="star-line">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                        </div>
+                        <div class="star-line">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i> 
+                        </div>
+                        <div class="star-line">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                        </div> 
+                        <div class="star-line">
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                                <i class="star"></i>
+                            </div>                       
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <footer class="footer">
@@ -71,5 +115,6 @@
         </div>
     </footer>
 </main>
+<script src="ananda.js"></script>
 </body>
 </html>
