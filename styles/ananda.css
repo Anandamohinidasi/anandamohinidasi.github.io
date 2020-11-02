@@ -1,9 +1,3 @@
-/*fonte albertus medium*/
-/*fonte do nanda é righeteous*/
-/*fonte do rodrigues é revalia*/
-/*cor clara do logo: #a288ff*/
-/*cor escura do logo: #5e3587*/
-
 body {
     margin: 0;
     font-family: 'Revalia', cursive;
@@ -36,7 +30,6 @@ body {
     border-left-color: #47ff47;
     border-width: 8px;
     border-style: solid;
-    -webkit-transform-style: preserve-3d;
 }
 
 .my-face img {
@@ -44,14 +37,6 @@ body {
     border: 6px solid;
     max-width: 50vw;
 }
-
-.my-face:hover:before {
-    animation: orbit 3s infinite linear;
-}
-
-/*.my-face:hover img{*/
-    /*animation: orbitAgainst 3s infinite linear;*/
-/*}*/
 
 .footer {
     position: absolute;
@@ -66,41 +51,6 @@ body {
 .social-icon {
     color: #F5F5F7;
     padding: 0 1rem;
-}
-
-
-@keyframes orbit {
-    from {
-        -webkit-transform: rotate(0deg) rotateX(0deg);
-        -moz-transform: rotate(0deg) rotateX(0deg);
-        -o-transform: rotate(0deg) rotateX(0deg);
-        -ms-transform: rotate(0deg) rotateX(0deg);
-        transform: rotate(0deg) rotateX(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg) rotateX(360deg);
-        -moz-transform: rotate(360deg) rotateX(360deg);
-        -o-transform: rotate(360deg) rotateX(360deg);
-        -ms-transform: rotate(360deg) rotateX(360deg);
-        transform: rotate(360deg) rotateX(360deg);
-    }
-}
-
-@keyframes orbitAgainst {
-    from {
-        -webkit-transform: rotate(0deg) translateZ(0px);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
 }
 
 @media (min-width: 600px) {
